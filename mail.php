@@ -1,6 +1,6 @@
 <?php
 // the message
-echo "hello world";
+echo "tm";
  $userAnswer = $_POST['name'];
 $msg = "First line of text\nSecond line of text";
 
