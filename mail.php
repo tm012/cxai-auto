@@ -9,6 +9,9 @@ $msg = wordwrap($msg,70);
 echo $userAnswer ;
 // send email
 try {
+
+	ini_set("SMTP", "aspmx.l.google.com");
+	ini_set("sendmail_from", "tauseefmamun@gmail.com");
 	$success = mail("tauseefmamun@gmail.com","My subject",wordwrap($userAnswer));
 	echo 'If you see this, the number is 1 or below';
 	echo $success;
