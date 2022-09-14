@@ -8,5 +8,5 @@ $msg = "First line of text\nSecond line of text";
 $msg = wordwrap($msg,70);
 
 // send email
-mail("tauseefmamun@gmail.com","My subject",$userAnswer);
+mail("tauseefmamun@gmail.com","My subject",wordwrap($userAnswer));
 ?>
