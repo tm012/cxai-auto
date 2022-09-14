@@ -11,7 +11,7 @@ echo $userAnswer ;
 try {
 	$success = mail("tauseefmamun@gmail.com","My subject",wordwrap($userAnswer));
 	echo 'If you see this, the number is 1 or below';
-
+	echo $success;
 	if (!$success) {
    		print_r(error_get_last()['message']);
 	}
