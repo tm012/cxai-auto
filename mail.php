@@ -1,6 +1,6 @@
 <?php
 // the message
-console.log("tm");
+echo "hello world";
  $userAnswer = $_GET['name'];
 $msg = "First line of text\nSecond line of text";
 
