@@ -186,15 +186,39 @@ $(".complete_study").click(function(){
    $("#navigation_bar").hide();
 
 
+ 
+
+
    $.ajax({
-     url: 'mail.php', //This is the current doc
-     type: "POST",
-     dataType:'json', // add json datatype to get json
-     data: ({name: text}),
-     success: function(data){
-         console.log("data");
-     }
-}); 
+        url: "mail.php",
+        cache: false,
+
+        data: {
+
+          name: text,
+          
+          submit_check_1: "submit_check_1"
+
+
+        },
+        type: 'GET',
+        async: false,
+        success: function (data) {
+          console.log("Success");
+          //console.log(data);
+          
+       
+        
+          },
+
+           error: function (jqXHR, status, err) {
+              console.log("fail");
+              //location.reload(true);
+
+
+
+            }
+        })
 
 });
 </script>
