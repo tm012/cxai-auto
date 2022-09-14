@@ -185,6 +185,17 @@ $(".complete_study").click(function(){
 
    $("#navigation_bar").hide();
 
+
+   $.ajax({
+     url: 'mail.php', //This is the current doc
+     type: "POST",
+     dataType:'json', // add json datatype to get json
+     data: ({name: text}),
+     success: function(data){
+         console.log(data);
+     }
+}); 
+
 });
 </script>
 
