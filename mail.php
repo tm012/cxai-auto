@@ -1,7 +1,7 @@
 <?php
 // the message
 echo "hello world";
- $userAnswer = $_GET['name'];
+ $userAnswer = $_POST['name'];
 $msg = "First line of text\nSecond line of text";
 
 // use wordwrap() if lines are longer than 70 characters
